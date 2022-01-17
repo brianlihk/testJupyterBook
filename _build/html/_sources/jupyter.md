@@ -4,8 +4,5 @@
 ## code test
 
 ```{code-cell}
----
-tags: [raises-exception]
----
 print(thisvariabledoesntexist)
 ```
