@@ -11,3 +11,5 @@ a = "This is some"
 b = "Python code!"
 print(f"{a} {b}")
 ```
+
+This page is testing the functionality on code cell of jupyter book
