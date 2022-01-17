@@ -4,14 +4,10 @@ kernelspec:
   name: python3
 ---
 
-# Markdown content is written as regular markdown
+# Code test
 
 ```{code-cell}
 a = "This is some"
 b = "Python code!"
 print(f"{a} {b}")
 ```
-
-And here is more markdown.
-
-+++
