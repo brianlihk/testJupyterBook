@@ -7,7 +7,9 @@ kernelspec:
 # Markdown content is written as regular markdown
 
 ```{code-cell}
-print("Here is a Python cell")
+a = "This is some"
+b = "Python code!"
+print(f"{a} {b}")
 ```
 
 And here is more markdown.
