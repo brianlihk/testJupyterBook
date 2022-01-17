@@ -6,3 +6,6 @@
 ```{code-cell}
 print(thisvariabledoesntexist)
 ```
+
+(code_block_test2)=
+## code test 2
