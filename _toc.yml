@@ -2,7 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: mymarkdownfile
-chapters:
-- file: notebooks
-- file: jupyter
+root: goal
+parts:
+- caption: Week1
+  chapters:
+  - file: tutorial_make_ipynb_page
