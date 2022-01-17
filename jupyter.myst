@@ -2,14 +2,28 @@
 kernelspec:
   display_name: Python 3
   name: python3
+notebookmetadatakey: val
+notebookmetadatakey2: val2
 ---
 
-# Code test
+# Markdown content is written as regular markdown
+
+You can also write {ref}`MyST Markdown <myst>`.
 
 ```{code-cell}
-a = "This is some"
-b = "Python code!"
-print(f"{a} {b}")
+---
+cellmetadatakey: val1
+---
+print("Here is a Python cell")
 ```
 
-This page is testing the functionality on code cell of jupyter book
+And here is more markdown.
+
++++
+
+Separate markdown cells with `+++` lines.
+
+```{code-cell}
+:cellmetadatakey: val1
+print("Another code cell with a second optional metadata syntax")
+```
