@@ -6,4 +6,4 @@ root: goal
 parts:
 - caption: Week1
   chapters:
-  - file: tutorial_make_ipynb_page
+  - file: week1/tutorial_make_ipynb_page

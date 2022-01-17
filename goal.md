@@ -1,4 +1,4 @@
-# My Introduction about my goals
+# My Introduction
 
 (intro)=
 ## Introduction
