@@ -7,3 +7,4 @@ parts:
 - caption: Week1
   chapters:
   - file: week1/tutorial_make_ipynb_page
+  - file: jblearning
