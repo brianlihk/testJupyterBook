@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to create a executable page in jupyter book (17 Jan 2022) &#8212; Study Log</title>
+    <title>Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022) &#8212; Study Log</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)" href="jblearning.html" />
-    <link rel="prev" title="My Introduction" href="../goal.html" />
+    <link rel="next" title="Learning on ipywidgets (19 Jan 2022)" href="01pywidgets.html" />
+    <link rel="prev" title="How to create a executable page in jupyter book (17 Jan 2022)" href="tutorial_make_ipynb_page.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,13 +104,13 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tutorial_make_ipynb_page.html">
    How to create a executable page in jupyter book (17 Jan 2022)
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="jblearning.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)
   </a>
  </li>
@@ -158,12 +158,9 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/week1/tutorial_make_ipynb_page.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week1/tutorial_make_ipynb_page.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week1/jblearning.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -196,23 +193,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/brianlihk/testJupyterBook/master?urlpath=tree/docs/week1/tutorial_make_ipynb_page.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -224,18 +204,23 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#file-type-in-jupyter-notebook">
+   File type in jupyter notebook
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prepare-the-md-file">
-   Prepare the .md file
+  <a class="reference internal nav-link" href="#process-from-source-file-to-rendered-file">
+   Process from source file to rendered file
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#have-some-fun-with-it">
-   Have some fun with it!
+  <a class="reference internal nav-link" href="#additional-content-for-a-better-reading-experience-in-jupyter-book">
+   additional content for a better reading experience in jupyter book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#thing-that-i-noticed">
+   Thing that I noticed
   </a>
  </li>
 </ul>
@@ -248,7 +233,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>How to create a executable page in jupyter book (17 Jan 2022)</h1>
+                <h1>Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -259,18 +244,23 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#file-type-in-jupyter-notebook">
+   File type in jupyter notebook
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prepare-the-md-file">
-   Prepare the .md file
+  <a class="reference internal nav-link" href="#process-from-source-file-to-rendered-file">
+   Process from source file to rendered file
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#have-some-fun-with-it">
-   Have some fun with it!
+  <a class="reference internal nav-link" href="#additional-content-for-a-better-reading-experience-in-jupyter-book">
+   additional content for a better reading experience in jupyter book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#thing-that-i-noticed">
+   Thing that I noticed
   </a>
  </li>
 </ul>
@@ -282,82 +272,61 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="how-to-create-a-executable-page-in-jupyter-book-17-jan-2022">
-<h1>How to create a executable page in jupyter book (17 Jan 2022)<a class="headerlink" href="#how-to-create-a-executable-page-in-jupyter-book-17-jan-2022" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>In order to make a page executable, we will need some work to do it.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="day-1-learning-about-jupytercon-tutorial-2020-18-jan-2022">
+<h1>Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)<a class="headerlink" href="#day-1-learning-about-jupytercon-tutorial-2020-18-jan-2022" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="file-type-in-jupyter-notebook">
+<h2>File type in jupyter notebook<a class="headerlink" href="#file-type-in-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<p>There are many filetypes in jupyter book, we can use it to develop file to compile a page to see. Which includes:</p>
+<ol class="simple">
+<li><p>.md : Markdown file</p></li>
+<li><p>.ipynb : jupyter notebook file</p></li>
+</ol>
 </div>
 <hr class="docutils" />
-<div class="section" id="prepare-the-md-file">
-<h2>Prepare the .md file<a class="headerlink" href="#prepare-the-md-file" title="Permalink to this headline">¶</a></h2>
-<p>To make the code executable, we will need to add front-matter YAML block to state to the machine that we are using python3 code.</p>
-<p>Add this block on top of your .md file so the file recognize it as a executable page.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
-<span class="n">jupytext</span><span class="p">:</span>
-  <span class="n">formats</span><span class="p">:</span> <span class="n">md</span><span class="p">:</span><span class="n">myst</span>
-  <span class="n">text_representation</span><span class="p">:</span>
-    <span class="n">extension</span><span class="p">:</span> <span class="o">.</span><span class="n">md</span>
-    <span class="n">format_name</span><span class="p">:</span> <span class="n">myst</span>
-<span class="n">kernelspec</span><span class="p">:</span>
-  <span class="n">display_name</span><span class="p">:</span> <span class="n">Python</span> <span class="mi">3</span>
-  <span class="n">language</span><span class="p">:</span> <span class="n">python</span>
-  <span class="n">name</span><span class="p">:</span> <span class="n">python3</span>
-<span class="o">---</span>
-</pre></div>
+<div class="section" id="process-from-source-file-to-rendered-file">
+<h2>Process from source file to rendered file<a class="headerlink" href="#process-from-source-file-to-rendered-file" title="Permalink to this headline">¶</a></h2>
+<p>We cannot read the file directly from the .md file, so we will need to render it into human-readable pages in order to make it readable.</p>
+<p>The source file(.md, .ipynb, .myst) will converted in to jupyter notebook for the machine to execute and cacheing those output in code-cell for the purpose of show to audiance. Then it will render into different files such as .pdf, .html, and so on.</p>
 </div>
-<p>When we need to make a executable code, we need to code inside the code-cell, the format of the code-cell is like below:</p>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{code-cell} ipython3
-
-```
-</pre></div>
+<hr class="docutils" />
+<div class="section" id="additional-content-for-a-better-reading-experience-in-jupyter-book">
+<h2>additional content for a better reading experience in jupyter book<a class="headerlink" href="#additional-content-for-a-better-reading-experience-in-jupyter-book" title="Permalink to this headline">¶</a></h2>
+<p>there are a lot of extra style in jupyter book in different looking for senmantic content block</p>
+<ol>
+<li><p>Admonition block</p>
+<div class="admonition-this-is-a-admonition-block admonition">
+<p class="admonition-title">This is a admonition block</p>
+<p>We can put text inside here to make admonition</p>
 </div>
-<p>We can put python code into the space in the middle and it will execute and return result for us below the cell</p>
+<p>We can also add style into admonition block such as tips.</p>
+</li>
+<li><p>Admonition block with tip class</p>
+<div class="tip admonition">
+<p class="admonition-title">This is a admonition tip block</p>
+<p>We can put text inside here to make admonition</p>
 </div>
-<div class="section" id="have-some-fun-with-it">
-<h2>Have some fun with it!<a class="headerlink" href="#have-some-fun-with-it" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Lets make some fun on this block and try to print out some message!</p>
+</li>
+<li><p>Figures and captions
+We can add figures into the page to enhance your point:</p>
+<div class="figure align-default" id="id1">
+<img alt="../_images/rick.jpg" src="../_images/rick.jpg" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">This is a picture to rick roll you</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-<span class="gu">  name: python3</span>
-<span class="gu">---</span>
-
-```{code-cell} ipython3
-from datetime import datetime
-
-now = datetime.now()
-
-print(f&#39;This is a message executed at {now.strftime(&quot;%d/%m/%Y %H:%M:%S&quot;)}&#39;)
-```
-</pre></div>
+</li>
+<li><p>Drop down block
+We can add a class called ‘dropdown’ to hide the block</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Rick Roll</p>
+<p>Never gonna let you down</p>
 </div>
-<p>Result:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-
-<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;This is a message executed at </span><span class="si">{</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y %H:%M:%S&quot;</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
+</li>
+</ol>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This is a message executed at 19/01/2022 11:46:06
-</pre></div>
-</div>
-</div>
-</div>
+<hr class="docutils" />
+<div class="section" id="thing-that-i-noticed">
+<h2>Thing that I noticed<a class="headerlink" href="#thing-that-i-noticed" title="Permalink to this headline">¶</a></h2>
+<p>I found that you have to remove the whole _build file to make your page update completly, or it will remain some old data or cache inside the page and cause the navigation bugged.</p>
+<p>Also, the compiler will automatically update the figure number for you to save you some time from re-entering the figure number whenn you inserted or deleted some figure.</p>
 </div>
 </div>
 
@@ -386,17 +355,17 @@ print(f&#39;This is a message executed at {now.strftime(&quot;%d/%m/%Y %H:%M:%S&
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../goal.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="tutorial_make_ipynb_page.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">My Introduction</p>
+            <p class="prev-next-title">How to create a executable page in jupyter book (17 Jan 2022)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="jblearning.html" title="next page">
+    <a class='right-next' id="next-link" href="01pywidgets.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)</p>
+        <p class="prev-next-title">Learning on ipywidgets (19 Jan 2022)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
