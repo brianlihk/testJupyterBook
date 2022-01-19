@@ -161,15 +161,21 @@ display(row, output)
 ```{code-cell} ipython3
 :
 from IPython.display import display
+import sys
 button = widgets.Button(description="Click Me!")
 output = widgets.Output()
 
 display(button, output)
 
 def on_button_clicked(b):
-    print('clicked')
+    print('clicked', file=sys.stderr)
     with output:
-        print("Button clicked.")
+        print("Button clicked.", file=sys.stderr)
 
 button.on_click(on_button_clicked)
+```
+
+```{note}
+changed the format form .md to ipynb, and it still donesn't work at the end of the day.
+will look for other method of fix next day.
 ```
