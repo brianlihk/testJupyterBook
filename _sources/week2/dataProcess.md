@@ -38,9 +38,16 @@ open('schools.xlsx', 'wb').write(r.content)
 df = pd.read_excel('schools.xlsx')
 df = df.drop(df.columns[[0]], axis=1)
 
-df.sample(3)
+df.sample(2)
 ```
-
+---
+## Find how many types of school is in HK
+To do it, we can use unique() to find out unique item in array.
+```{code-cell} ipython3
+schoolTypes = df['ENGLISH CATEGORY'].unique()
+for type in schoolTypes:
+	print(type)
+```
 
 
 
