@@ -254,6 +254,11 @@
    Downloading material to process
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#find-how-many-types-of-school-is-in-hk">
+   Find how many types of school is in HK
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -292,6 +297,11 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#downloading-material-to-process">
    Downloading material to process
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#find-how-many-types-of-school-is-in-hk">
+   Find how many types of school is in HK
   </a>
  </li>
 </ul>
@@ -341,7 +351,7 @@
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;schools.xlsx&#39;</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="mi">0</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -389,81 +399,91 @@
   </thead>
   <tbody>
     <tr>
-      <th>3408</th>
-      <td>Kindergartens</td>
-      <td>幼稚園</td>
-      <td>THE CHURCH OF CHRIST IN CHINA KEI CHUN KINDERG...</td>
-      <td>中華基督教會基真幼稚園</td>
-      <td>UNIT NOS. 114-127, G/F., LAI LO HOUSE, LAI KOK...</td>
-      <td>九龍深水埗麗閣邨麗蘿樓地下１１４－１２７號</td>
-      <td>114.157012</td>
-      <td>114.157012</td>
-      <td>22.331746</td>
-      <td>22.331746</td>
+      <th>1960</th>
+      <td>Kindergarten-cum-child Care Centres</td>
+      <td>幼稚園暨幼兒中心</td>
+      <td>THE WOODLAND MONTESSORI PRE-SCHOOL (CAINE ROAD)</td>
+      <td>THE WOODLAND MONTESSORI PRE-SCHOOL (CAINE ROAD)</td>
+      <td>1/F TO 2/F ON FUNG BUILDING 110-118 CAINE ROAD...</td>
+      <td>香港堅道１１０－１１８號安峰大廈１樓至２樓</td>
+      <td>114.150141</td>
+      <td>114.150141</td>
+      <td>22.282697</td>
+      <td>22.282697</td>
       <td>...</td>
-      <td>KINDERGARTEN</td>
-      <td>幼稚園</td>
-      <td>23618246</td>
-      <td>23618246</td>
-      <td>27487036</td>
-      <td>27487036</td>
-      <td>http://kck.ccc.edu.hk</td>
-      <td>http://kck.ccc.edu.hk</td>
-      <td>PROTESTANTISM / CHRISTIANITY</td>
-      <td>基督教</td>
+      <td>KINDERGARTEN-CUM-CHILD CARE CENTRES</td>
+      <td>幼稚園暨幼兒中心</td>
+      <td>25491211</td>
+      <td>25491211</td>
+      <td>25499011</td>
+      <td>25499011</td>
+      <td>http://www.woodlandschools.com/channel.php?cha...</td>
+      <td>http://www.woodlandschools.com/channel.php?cha...</td>
+      <td>NOT APPLICABLE</td>
+      <td>不適用</td>
     </tr>
     <tr>
-      <th>454</th>
+      <th>561</th>
       <td>Aided Secondary Schools</td>
       <td>資助中學</td>
-      <td>BUDDHIST TAI HUNG COLLEGE</td>
-      <td>佛教大雄中學</td>
-      <td>38 CHEUNG FAT STREET SO UK SHAMSHUIPO KOWLOON</td>
-      <td>九龍蘇屋深水埗長發街38號</td>
-      <td>114.158188</td>
-      <td>114.158188</td>
-      <td>22.340106</td>
-      <td>22.340106</td>
+      <td>HOLY FAMILY CANOSSIAN COLLEGE</td>
+      <td>嘉諾撒聖家書院</td>
+      <td>33 INVERNESS ROAD KOWLOON</td>
+      <td>九龍延文禮士道33號</td>
+      <td>114.185407</td>
+      <td>114.185407</td>
+      <td>22.334309</td>
+      <td>22.334309</td>
       <td>...</td>
       <td>SECONDARY</td>
       <td>中學</td>
-      <td>23862988,23876800</td>
-      <td>23862988,23876800</td>
-      <td>23869365</td>
-      <td>23869365</td>
-      <td>http://www.bthc.edu.hk</td>
-      <td>http://www.bthc.edu.hk</td>
-      <td>BUDDHISM</td>
-      <td>佛教</td>
-    </tr>
-    <tr>
-      <th>3088</th>
-      <td>Kindergartens</td>
-      <td>幼稚園</td>
-      <td>TAI PING KINDERGARTEN</td>
-      <td>太平幼稚園</td>
-      <td>UNIT NO.111-115, G/F., PING YEE HOUSE, TAI PIN...</td>
-      <td>新界上水太平邨平易樓地下</td>
-      <td>114.126174</td>
-      <td>114.126174</td>
-      <td>22.497145</td>
-      <td>22.497145</td>
-      <td>...</td>
-      <td>KINDERGARTEN</td>
-      <td>幼稚園</td>
-      <td>26733199</td>
-      <td>26733199</td>
-      <td>26734561</td>
-      <td>26734561</td>
-      <td>http://www.taiping.edu.hk</td>
-      <td>http://www.taiping.edu.hk</td>
-      <td>TAOISM</td>
-      <td>道教</td>
+      <td>23379123,23379080</td>
+      <td>23379123,23379080</td>
+      <td>23370827</td>
+      <td>23370827</td>
+      <td>http://www.hfcc.edu.hk</td>
+      <td>http://www.hfcc.edu.hk</td>
+      <td>CATHOLICISM</td>
+      <td>天主教</td>
     </tr>
   </tbody>
 </table>
-<p>3 rows × 32 columns</p>
+<p>2 rows × 32 columns</p>
 </div></div></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="find-how-many-types-of-school-is-in-hk">
+<h2>Find how many types of school is in HK<a class="headerlink" href="#find-how-many-types-of-school-is-in-hk" title="Permalink to this headline">¶</a></h2>
+<p>To do it, we can use unique() to find out unique item in array.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schoolTypes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ENGLISH CATEGORY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="k">for</span> <span class="nb">type</span> <span class="ow">in</span> <span class="n">schoolTypes</span><span class="p">:</span>
+	<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Aided Primary Schools
+Aided Secondary Schools
+Aided Special Schools
+Caput Secondary Schools
+Direct Subsidy Scheme Primary Schools
+Direct Subsidy Scheme Secondary Schools
+English Schools Foundation (Primary)
+English Schools Foundation (Secondary)
+Government Primary Schools
+Government Secondary Schools
+International Schools (Primary)
+International Schools (Secondary)
+Kindergarten-cum-child Care Centres
+Kindergartens
+Private Primary Schools
+Private Secondary Schools (Day/Evening)
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
