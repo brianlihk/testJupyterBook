@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Data process and visualize using jupyter book
+# # Data process and visualize using jupyter book - 1(24 Jan 2021)
 # 
 # ## Introduction
-# Today i will follow insturction from [Interactive Data Analysis with FigureWidget ipywidgets in Python](https://plotly.com/python/figurewidget-app/) to develop a form with HKGov's database.
+
+#   Today i will follow insturction from [Interactive Data Analysis with FigureWidget ipywidgets in Python](https://plotly.com/python/figurewidget-app/) to develop a form with HKGov's database.
+# 
 # ---
 # ## Importing libararies
 
@@ -42,11 +44,62 @@ df.sample(2)
 # ---
 # ## Find how many types of school is in HK
 # To do it, we can use unique() to find out unique item in array.
+# ### Category
 
 # In[3]:
 
 
-schoolTypes = df['ENGLISH CATEGORY'].unique()
-for type in schoolTypes:
-	print(type)
+schoolTypes = []
+chiSchoolTypes = df['中文類別'].unique()
+for i in range(len(chiSchoolTypes)):
+	schoolTypes.append(chiSchoolTypes[i])
+
+tempTable = pd.DataFrame(schoolTypes)
+tempTable.columns=['類別']
+display(tempTable)
+
+
+# ### Student Gender
+
+# In[4]:
+
+
+genders = []
+chiGenders = df['就讀學生性別'].unique()
+for i in range(len(chiGenders)):
+	genders.append(chiGenders[i])
+	
+tempTable = pd.DataFrame(genders)
+tempTable.columns=['就讀學生性別']
+display(tempTable)
+
+
+# ### Religion
+
+# In[5]:
+
+
+religions = []
+chiReligion = df['宗教'].unique()
+for i in range(len(chiReligion)):
+	religions.append(chiReligion[i])
+	
+tempTable = pd.DataFrame(religions)
+tempTable.columns=['宗教']
+display(tempTable)
+
+
+# ---
+# 
+# ### We also need to get numbers on each data
+
+# In[6]:
+
+
+data = []
+for row in df.loc():
+  data_row = []
+  for col_data in row:
+    data_row.append(col_data)
+print(data)
 
