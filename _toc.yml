@@ -9,3 +9,6 @@ parts:
   - file: week1/tutorial_make_ipynb_page
   - file: week1/jblearning
   - file: week1/01pywidgets
+- caption: Week2
+  chapters:
+  - file: week2/dataProcess

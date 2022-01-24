@@ -47,5 +47,5 @@ there are a lot of extra style in jupyter book in different looking for senmanti
 ## Thing that I noticed
 
 I found that you have to remove the whole _build file to make your page update completly, or it will remain some old data or cache inside the page and cause the navigation bugged.
-
++++
 Also, the compiler will automatically update the figure number for you to save you some time from re-entering the figure number whenn you inserted or deleted some figure.

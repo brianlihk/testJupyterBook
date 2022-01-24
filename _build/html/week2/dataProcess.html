@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to create a executable page in jupyter book (17 Jan 2022) &#8212; Study Log</title>
+    <title>Data process and visualize using jupyter book &#8212; Study Log</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)" href="jblearning.html" />
-    <link rel="prev" title="My Introduction" href="../goal.html" />
+    <link rel="prev" title="Learning on ipywidgets (19 Jan 2022)" href="../week1/01pywidgets.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,19 +102,19 @@
   Week1
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/tutorial_make_ipynb_page.html">
    How to create a executable page in jupyter book (17 Jan 2022)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="jblearning.html">
+  <a class="reference internal" href="../week1/jblearning.html">
    Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="01pywidgets.html">
+  <a class="reference internal" href="../week1/01pywidgets.html">
    Learning on ipywidgets (19 Jan 2022)
   </a>
  </li>
@@ -125,9 +124,9 @@
   Week2
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week2/dataProcess.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Data process and visualize using jupyter book
   </a>
  </li>
@@ -171,11 +170,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/week1/tutorial_make_ipynb_page.ipynb"><button type="button"
+            href="../_sources/week2/dataProcess.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week1/tutorial_make_ipynb_page.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week2/dataProcess.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -213,7 +212,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/brianlihk/testJupyterBook/master?urlpath=tree/docs/week1/tutorial_make_ipynb_page.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/brianlihk/testJupyterBook/master?urlpath=tree/docs/week2/dataProcess.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -241,13 +240,18 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prepare-the-md-file">
-   Prepare the .md file
+  <a class="reference internal nav-link" href="#today-i-will-follow-insturction-from-interactive-data-analysis-with-figurewidget-ipywidgets-in-python-to-develop-a-form-with-hkgov-s-database">
+   Today i will follow insturction from Interactive Data Analysis with FigureWidget ipywidgets in Python to develop a form with HKGov’s database.
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#have-some-fun-with-it">
-   Have some fun with it!
+  <a class="reference internal nav-link" href="#importing-libararies">
+   Importing libararies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#downloading-material-to-process">
+   Downloading material to process
   </a>
  </li>
 </ul>
@@ -260,7 +264,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>How to create a executable page in jupyter book (17 Jan 2022)</h1>
+                <h1>Data process and visualize using jupyter book</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -276,13 +280,18 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prepare-the-md-file">
-   Prepare the .md file
+  <a class="reference internal nav-link" href="#today-i-will-follow-insturction-from-interactive-data-analysis-with-figurewidget-ipywidgets-in-python-to-develop-a-form-with-hkgov-s-database">
+   Today i will follow insturction from Interactive Data Analysis with FigureWidget ipywidgets in Python to develop a form with HKGov’s database.
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#have-some-fun-with-it">
-   Have some fun with it!
+  <a class="reference internal nav-link" href="#importing-libararies">
+   Importing libararies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#downloading-material-to-process">
+   Downloading material to process
   </a>
  </li>
 </ul>
@@ -294,81 +303,167 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="how-to-create-a-executable-page-in-jupyter-book-17-jan-2022">
-<h1>How to create a executable page in jupyter book (17 Jan 2022)<a class="headerlink" href="#how-to-create-a-executable-page-in-jupyter-book-17-jan-2022" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-process-and-visualize-using-jupyter-book">
+<h1>Data process and visualize using jupyter book<a class="headerlink" href="#data-process-and-visualize-using-jupyter-book" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>In order to make a page executable, we will need some work to do it.</p>
 </div>
-<hr class="docutils" />
-<div class="section" id="prepare-the-md-file">
-<h2>Prepare the .md file<a class="headerlink" href="#prepare-the-md-file" title="Permalink to this headline">¶</a></h2>
-<p>To make the code executable, we will need to add front-matter YAML block to state to the machine that we are using python3 code.</p>
-<p>Add this block on top of your .md file so the file recognize it as a executable page.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
-<span class="n">jupytext</span><span class="p">:</span>
-  <span class="n">formats</span><span class="p">:</span> <span class="n">md</span><span class="p">:</span><span class="n">myst</span>
-  <span class="n">text_representation</span><span class="p">:</span>
-    <span class="n">extension</span><span class="p">:</span> <span class="o">.</span><span class="n">md</span>
-    <span class="n">format_name</span><span class="p">:</span> <span class="n">myst</span>
-<span class="n">kernelspec</span><span class="p">:</span>
-  <span class="n">display_name</span><span class="p">:</span> <span class="n">Python</span> <span class="mi">3</span>
-  <span class="n">language</span><span class="p">:</span> <span class="n">python</span>
-  <span class="n">name</span><span class="p">:</span> <span class="n">python3</span>
-<span class="o">---</span>
-</pre></div>
+<div class="section" id="today-i-will-follow-insturction-from-interactive-data-analysis-with-figurewidget-ipywidgets-in-python-to-develop-a-form-with-hkgov-s-database">
+<h2>Today i will follow insturction from <a class="reference external" href="https://plotly.com/python/figurewidget-app/">Interactive Data Analysis with FigureWidget ipywidgets in Python</a> to develop a form with HKGov’s database.<a class="headerlink" href="#today-i-will-follow-insturction-from-interactive-data-analysis-with-figurewidget-ipywidgets-in-python-to-develop-a-form-with-hkgov-s-database" title="Permalink to this headline">¶</a></h2>
 </div>
-<p>When we need to make a executable code, we need to code inside the code-cell, the format of the code-cell is like below:</p>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{code-cell} ipython3
-
-```
-</pre></div>
-</div>
-<p>We can put python code into the space in the middle and it will execute and return result for us below the cell</p>
-</div>
-<div class="section" id="have-some-fun-with-it">
-<h2>Have some fun with it!<a class="headerlink" href="#have-some-fun-with-it" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Lets make some fun on this block and try to print out some message!</p>
-</div>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-<span class="gu">  name: python3</span>
-<span class="gu">---</span>
-
-```{code-cell} ipython3
-from datetime import datetime
-
-now = datetime.now()
-
-print(f&#39;This is a message executed at {now.strftime(&quot;%d/%m/%Y %H:%M:%S&quot;)}&#39;)
-```
-</pre></div>
-</div>
-<p>Result:</p>
+<div class="section" id="importing-libararies">
+<h2>Importing libararies<a class="headerlink" href="#importing-libararies" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">widgets</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="downloading-material-to-process">
+<h2>Downloading material to process<a class="headerlink" href="#downloading-material-to-process" title="Permalink to this headline">¶</a></h2>
+<p>We will download school list data from HKGov: <a class="reference external" href="https://data.gov.hk/en-data/dataset/hk-edb-schinfo-school-location-and-information">School Location and Information</a> which contains he names, addresses, coordinates and other relevant information of government, private, aided, Direct Subsidy Scheme, English Schools Foundation and international schools, kindergartens and kindergartens cum-child care centre (as at 28 December 2021). For precise, the file link is: <a class="reference external" href="http://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.xlsx">http://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.xlsx</a></p>
+<p>We will use this file as our raw data and visualize it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.xlsx&#39;</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">open</span><span class="p">(</span><span class="s1">&#39;schools.xlsx&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;This is a message executed at </span><span class="si">{</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y %H:%M:%S&quot;</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;schools.xlsx&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="mi">0</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This is a message executed at 24/01/2022 17:44:42
-</pre></div>
-</div>
-</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ENGLISH CATEGORY</th>
+      <th>中文類別</th>
+      <th>ENGLISH NAME</th>
+      <th>中文名稱</th>
+      <th>ENGLISH ADDRESS</th>
+      <th>中文地址</th>
+      <th>LONGITUDE</th>
+      <th>經度</th>
+      <th>LATITUDE</th>
+      <th>緯度</th>
+      <th>...</th>
+      <th>SCHOOL LEVEL</th>
+      <th>學校類型</th>
+      <th>TELEPHONE</th>
+      <th>聯絡電話</th>
+      <th>FAX NUMBER</th>
+      <th>傳真號碼</th>
+      <th>WEBSITE</th>
+      <th>網頁</th>
+      <th>RELIGION</th>
+      <th>宗教</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3408</th>
+      <td>Kindergartens</td>
+      <td>幼稚園</td>
+      <td>THE CHURCH OF CHRIST IN CHINA KEI CHUN KINDERG...</td>
+      <td>中華基督教會基真幼稚園</td>
+      <td>UNIT NOS. 114-127, G/F., LAI LO HOUSE, LAI KOK...</td>
+      <td>九龍深水埗麗閣邨麗蘿樓地下１１４－１２７號</td>
+      <td>114.157012</td>
+      <td>114.157012</td>
+      <td>22.331746</td>
+      <td>22.331746</td>
+      <td>...</td>
+      <td>KINDERGARTEN</td>
+      <td>幼稚園</td>
+      <td>23618246</td>
+      <td>23618246</td>
+      <td>27487036</td>
+      <td>27487036</td>
+      <td>http://kck.ccc.edu.hk</td>
+      <td>http://kck.ccc.edu.hk</td>
+      <td>PROTESTANTISM / CHRISTIANITY</td>
+      <td>基督教</td>
+    </tr>
+    <tr>
+      <th>454</th>
+      <td>Aided Secondary Schools</td>
+      <td>資助中學</td>
+      <td>BUDDHIST TAI HUNG COLLEGE</td>
+      <td>佛教大雄中學</td>
+      <td>38 CHEUNG FAT STREET SO UK SHAMSHUIPO KOWLOON</td>
+      <td>九龍蘇屋深水埗長發街38號</td>
+      <td>114.158188</td>
+      <td>114.158188</td>
+      <td>22.340106</td>
+      <td>22.340106</td>
+      <td>...</td>
+      <td>SECONDARY</td>
+      <td>中學</td>
+      <td>23862988,23876800</td>
+      <td>23862988,23876800</td>
+      <td>23869365</td>
+      <td>23869365</td>
+      <td>http://www.bthc.edu.hk</td>
+      <td>http://www.bthc.edu.hk</td>
+      <td>BUDDHISM</td>
+      <td>佛教</td>
+    </tr>
+    <tr>
+      <th>3088</th>
+      <td>Kindergartens</td>
+      <td>幼稚園</td>
+      <td>TAI PING KINDERGARTEN</td>
+      <td>太平幼稚園</td>
+      <td>UNIT NO.111-115, G/F., PING YEE HOUSE, TAI PIN...</td>
+      <td>新界上水太平邨平易樓地下</td>
+      <td>114.126174</td>
+      <td>114.126174</td>
+      <td>22.497145</td>
+      <td>22.497145</td>
+      <td>...</td>
+      <td>KINDERGARTEN</td>
+      <td>幼稚園</td>
+      <td>26733199</td>
+      <td>26733199</td>
+      <td>26734561</td>
+      <td>26734561</td>
+      <td>http://www.taiping.edu.hk</td>
+      <td>http://www.taiping.edu.hk</td>
+      <td>TAOISM</td>
+      <td>道教</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 32 columns</p>
+</div></div></div>
 </div>
 </div>
 </div>
@@ -386,7 +481,7 @@ print(f&#39;This is a message executed at {now.strftime(&quot;%d/%m/%Y %H:%M:%S&
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week1"
+            path: "./week2"
         },
         predefinedOutput: true
     }
@@ -398,19 +493,12 @@ print(f&#39;This is a message executed at {now.strftime(&quot;%d/%m/%Y %H:%M:%S&
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../goal.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../week1/01pywidgets.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">My Introduction</p>
+            <p class="prev-next-title">Learning on ipywidgets (19 Jan 2022)</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="jblearning.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
