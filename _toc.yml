@@ -12,3 +12,4 @@ parts:
 - caption: Week2
   chapters:
   - file: week2/dataProcess
+  - file: week2/dataProcess-2
