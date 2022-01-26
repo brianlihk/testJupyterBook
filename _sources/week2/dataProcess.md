@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Data process and visualize using jupyter book - 1(24 Jan 2021)
+# Data process and visualize using jupyter book
 
 ## Introduction
 
@@ -49,7 +49,7 @@ To do it, we can use unique() to find out unique item in array.
 ### Category
 ```{code-cell} ipython3
 schoolTypes = []
-chiSchoolTypes = df['中文類別'].unique()
+chiSchoolTypes = df['ENGLISH CATEGORY'].unique()
 for i in range(len(chiSchoolTypes)):
 	schoolTypes.append(chiSchoolTypes[i])
 
@@ -61,7 +61,7 @@ display(tempTable)
 ### Student Gender
 ```{code-cell} ipython3
 genders = []
-chiGenders = df['就讀學生性別'].unique()
+chiGenders = df['STUDENTS GENDER'].unique()
 for i in range(len(chiGenders)):
 	genders.append(chiGenders[i])
 	
@@ -73,7 +73,7 @@ display(tempTable)
 ### Religion
 ```{code-cell} ipython3
 religions = []
-chiReligion = df['宗教'].unique()
+chiReligion = df['RELIGION'].unique()
 for i in range(len(chiReligion)):
 	religions.append(chiReligion[i])
 	
@@ -83,14 +83,48 @@ display(tempTable)
 ```
 ---
 
-### We also need to get numbers on each data
+## Print out value for each data in tab
 ```{code-cell} ipython3
+def setup_ui(df):
+    
+    out = widgets.Output()
+    with out:
+        display(df)
+        display(df.plot.barh(x='tag'))
+    return out
+
 data = []
-for row in df.loc():
-  data_row = []
-  for col_data in row:
-    data_row.append(col_data)
-print(data)
+row_count = len(df.index)
+for i in range(row_count):
+  data.append([])
+  for item in df.loc[i]:
+    data[i].append(item)
+ax = []
+ay = []
+for schoolType in schoolTypes:
+  ax.append(schoolType)
+  ay.append(0)
+  for row in data:
+    if(row[0] == schoolType):
+      ay[len(ay)-1] += 1
+schoolTypeDF = pd.DataFrame({'tag':ax, 'count':ay})
+
+ax = []
+ay = []
+for gender in genders:
+  ax.append(gender)
+  ay.append(0)
+  for row in data:
+    if(row[14] == gender):
+      ay[len(ay)-1] += 1
+genderDF = pd.DataFrame({'tag':ax, 'count':ay})
+
+tab_contents = ['School Type', 'Student gender']
+children = [setup_ui(schoolTypeDF), setup_ui(genderDF)]
+tab = widgets.Tab()
+tab.children = children
+tab.titles = tab_contents
+tab
 ```
 
 
