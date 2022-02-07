@@ -13,3 +13,6 @@ parts:
   chapters:
   - file: week2/dataProcess
   - file: week2/dataProcess-2
+- caption: Week3
+  chapters:
+  - file: week3/dataProcess-3
