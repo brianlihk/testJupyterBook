@@ -9,7 +9,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# Chart.js with Jupyter book
+# Chart.js with Jupyter book - 1
 
 ## Testing on javascript and ipywidget
 
@@ -39,3 +39,5 @@ display(my_script)
 widget variable not found
 
 After inspected into source code, i found that the p element was defined after script, so it will not work.
+
+HTML is rendered before ui.HTML

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chart.js with Jupyter book &#8212; Study Log</title>
+    <title>Chart.js with Jupyter book - 2 &#8212; Study Log</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,7 +54,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Chart.js with Jupyter book" href="../week2/dataProcess-2.html" />
+    <link rel="prev" title="Chart.js with Jupyter book - 1" href="../week2/dataProcess-2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -133,7 +133,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/dataProcess-2.html">
-   Chart.js with Jupyter book
+   Chart.js with Jupyter book - 1
   </a>
  </li>
 </ul>
@@ -145,7 +145,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Chart.js with Jupyter book
+   Chart.js with Jupyter book - 2
   </a>
  </li>
 </ul>
@@ -262,6 +262,21 @@
      Attempt 2
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attempt-3">
+     Attempt 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attempt-4">
+     Attempt 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attempt-5">
+     Attempt 5
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -274,7 +289,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Chart.js with Jupyter book</h1>
+                <h1>Chart.js with Jupyter book - 2</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -294,6 +309,21 @@
      Attempt 2
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attempt-3">
+     Attempt 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attempt-4">
+     Attempt 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attempt-5">
+     Attempt 5
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -305,8 +335,8 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="chart-js-with-jupyter-book">
-<h1>Chart.js with Jupyter book<a class="headerlink" href="#chart-js-with-jupyter-book" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="chart-js-with-jupyter-book-2">
+<h1>Chart.js with Jupyter book - 2<a class="headerlink" href="#chart-js-with-jupyter-book-2" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="testing-on-javascript-and-ipywidget">
 <h2>Testing on javascript and ipywidget<a class="headerlink" href="#testing-on-javascript-and-ipywidget" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="attempt-2">
@@ -316,11 +346,53 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">ui</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 
+<span class="c1"># Use IPython&#39;s HTML for the script</span>
+<span class="n">my_script</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;script&gt;</span>
+<span class="s2">        count = 0;</span>
+<span class="s2">        widget = document.getElementById(&quot;tester-p&quot;);</span>
+<span class="s2">        console.log(widget);</span>
+<span class="s2">        widget.innerHTML = count;</span>
+<span class="s2">    &lt;/script&gt;</span>
+
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">my_script</span><span class="p">)</span>
+
 <span class="c1"># Use ipywidgets HTML for the widget</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">ui</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;p id=&#39;tester-p&#39;&gt;Hello World!&lt;/p&gt;&quot;</span><span class="p">)</span>   
 <span class="n">display</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6y/wj224kz14r7fmfq5j9h9y9pr0000gn/T/ipykernel_85722/1926814118.py:2: DeprecationWarning: Importing display from IPython.core.display is deprecated since IPython 7.14, please import from IPython display
+  from IPython.core.display import display, HTML
+</pre></div>
+</div>
+<div class="output text_html">
+<script>
+    count = 0;
+    widget = document.getElementById("tester-p");
+    console.log(widget);
+    widget.innerHTML = count;
+</script>
 
-<span class="c1"># Use IPython&#39;s HTML for the script</span>
+</div><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "27885e1afabb496da8756120f2f72439"}
+</script></div>
+</div>
+<p>Still, IPython core is rendered before ipywidgets even we changed the order in script.</p>
+</div>
+<div class="section" id="attempt-3">
+<h3>Attempt 3<a class="headerlink" href="#attempt-3" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;p id=&#39;tester-p&#39;&gt;Hello World!&lt;/p&gt;&quot;</span><span class="p">)</span>   
+<span class="n">display</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
 <span class="n">my_script</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    &lt;script&gt;</span>
 <span class="s2">        count = 0;</span>
@@ -336,13 +408,11 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6y/wj224kz14r7fmfq5j9h9y9pr0000gn/T/ipykernel_84409/587626250.py:2: DeprecationWarning: Importing display from IPython.core.display is deprecated since IPython 7.14, please import from IPython display
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6y/wj224kz14r7fmfq5j9h9y9pr0000gn/T/ipykernel_85722/2041957232.py:1: DeprecationWarning: Importing display from IPython.core.display is deprecated since IPython 7.14, please import from IPython display
   from IPython.core.display import display, HTML
 </pre></div>
 </div>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "dad4eb9ea5ff4b1eb71f73b7ac3d6c7e"}
-</script><div class="output text_html">
+<div class="output text_html"><p id='tester-p'>Hello World!</p></div><div class="output text_html">
 <script>
     count = 0;
     widget = document.getElementById("tester-p");
@@ -352,13 +422,110 @@
 
 </div></div>
 </div>
+<p>Pure IPython core is used, and the result is shown flawlessly.</p>
+</div>
+<div class="section" id="attempt-4">
+<h3>Attempt 4<a class="headerlink" href="#attempt-4" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;p id=&#39;tester-p&#39;&gt;Hello World!&lt;/p&gt;&quot;</span><span class="p">)</span>
+<span class="n">button</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;button id=&#39;btn&#39; onClick=&#39;changeDigit()&#39;&gt;Change&lt;/button&gt;&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
+
+<span class="n">my_script</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;script&gt;</span>
+<span class="s2">        var count = 0;</span>
+<span class="s2">        function changeDigit(){</span>
+<span class="s2">          widget = document.getElementById(&quot;tester-p&quot;);</span>
+<span class="s2">          console.log(widget);</span>
+<span class="s2">          count++;</span>
+<span class="s2">          widget.innerHTML = count;</span>
+<span class="s2">        }</span>
+<span class="s2">    &lt;/script&gt;</span>
+
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">my_script</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6y/wj224kz14r7fmfq5j9h9y9pr0000gn/T/ipykernel_85722/466511866.py:1: DeprecationWarning: Importing display from IPython.core.display is deprecated since IPython 7.14, please import from IPython display
+  from IPython.core.display import display, HTML
+</pre></div>
+</div>
+<div class="output text_html"><p id='tester-p'>Hello World!</p></div><div class="output text_html"><button id='btn' onClick='changeDigit()'>Change</button></div><div class="output text_html">
+<script>
+    var count = 0;
+    function changeDigit(){
+      widget = document.getElementById("tester-p");
+      console.log(widget);
+      count++;
+      widget.innerHTML = count;
+    }
+</script>
+
+</div></div>
+</div>
+<p>The function is working and verified from console, but the innerHTML didn’t change.</p>
+</div>
+<div class="section" id="attempt-5">
+<h3>Attempt 5<a class="headerlink" href="#attempt-5" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;p id=&#39;atm4p&#39;&gt;Hello World!&lt;/p&gt;&quot;</span><span class="p">)</span>
+<span class="n">button</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;button id=&#39;btn&#39; onClick=&#39;changeDigit()&#39;&gt;Change&lt;/button&gt;&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
+
+<span class="n">my_script</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;script&gt;</span>
+<span class="s2">        var count = 0;</span>
+<span class="s2">        function changeDigit(){</span>
+<span class="s2">          widget = document.getElementById(&quot;atm4p&quot;);</span>
+<span class="s2">          console.log(widget);</span>
+<span class="s2">          count++;</span>
+<span class="s2">          widget.innerHTML = count;</span>
+<span class="s2">        }</span>
+<span class="s2">    &lt;/script&gt;</span>
+
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">my_script</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6y/wj224kz14r7fmfq5j9h9y9pr0000gn/T/ipykernel_85722/2478301387.py:1: DeprecationWarning: Importing display from IPython.core.display is deprecated since IPython 7.14, please import from IPython display
+  from IPython.core.display import display, HTML
+</pre></div>
+</div>
+<div class="output text_html"><p id='atm4p'>Hello World!</p></div><div class="output text_html"><button id='btn' onClick='changeDigit()'>Change</button></div><div class="output text_html">
+<script>
+    var count = 0;
+    function changeDigit(){
+      widget = document.getElementById("atm4p");
+      console.log(widget);
+      count++;
+      widget.innerHTML = count;
+    }
+</script>
+
+</div></div>
+</div>
+<p>Attemp 4 failed because it has shared the same pid with attemp 3. The issue was fixed by change the pid.</p>
 </div>
 </div>
 </div>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"5e3a997135d44c6eac15522e57529d20": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "00bcbb0905dd47fb8f88e1739908bd21": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "dad4eb9ea5ff4b1eb71f73b7ac3d6c7e": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_5e3a997135d44c6eac15522e57529d20", "placeholder": "\u200b", "style": "IPY_MODEL_00bcbb0905dd47fb8f88e1739908bd21", "value": "<p id='tester-p'>Hello World!</p>"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"7bef47c112f446eeac3fe8353d0105a4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4c1291e5acc74155bcb05f2c84724512": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "27885e1afabb496da8756120f2f72439": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_7bef47c112f446eeac3fe8353d0105a4", "placeholder": "\u200b", "style": "IPY_MODEL_4c1291e5acc74155bcb05f2c84724512", "value": "<p id='tester-p'>Hello World!</p>"}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
@@ -391,7 +558,7 @@
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Chart.js with Jupyter book</p>
+            <p class="prev-next-title">Chart.js with Jupyter book - 1</p>
         </div>
     </a>
 </div>
