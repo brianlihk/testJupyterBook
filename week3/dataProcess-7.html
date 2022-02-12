@@ -325,12 +325,13 @@
 <div>
   <canvas id="addableChart"></canvas>
 </div>
-Max length: <input id="input" value=10 />
+<div class="slidecontainer">
+  Max length (30-100): <input type="range" min="30" max="100" value="30" class="slider" id="input">
+</div>
 <script>
   function addDigit(){
     var inputValue = parseInt(document.getElementById('input').value);
-    console.log(myChart.data.labels.length > inputValue, myChart.data.labels.length, inputValue)
-    if(myChart.data.labels.length > inputValue){
+    while(myChart.data.datasets[0].data.length+1 > inputValue){
       myChart.data.datasets[0].data.shift();
       myChart.data.labels.shift();
       console.log(myChart.data.labels);
@@ -356,7 +357,12 @@ Max length: <input id="input" value=10 />
       backgroundColor: 'rgb(255, 99, 132)',
       borderColor: 'rgb(255, 99, 132)',
       data: [0, 10, 5, 2, 20, 30, 45],
-    }]
+    }],
+    options: {
+      animation: {
+        duration: 0
+      }
+    }
   };
 
   const config = {
@@ -369,7 +375,7 @@ Max length: <input id="input" value=10 />
     config
   );
 
-  setInterval(addDigit, 1000);
+  setInterval(addDigit, 100);
 </script></div>
 </div>
 
