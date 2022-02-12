@@ -12,6 +12,7 @@
 # 
 # <script>
 #   function addDigit(){
+#     var inputValue = parseInt(document.getElementById('input').value);
 #     console.log(myChart.data.labels.length > inputValue, myChart.data.labels.length, inputValue)
 #     if(myChart.data.labels.length > inputValue){
 #       myChart.data.datasets[0].data.shift();
@@ -20,7 +21,6 @@
 #     }
 #     myChart.data.datasets[0].data.push(getRandomInt(0,50));
 #     myChart.data.labels.push(myChart.data.labels.length+1);
-#     var inputValue = parseInt(document.getElementById('input').value);
 #     myChart.update();
 #   }
 #   function getRandomInt(min, max) {
