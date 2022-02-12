@@ -16,4 +16,9 @@ parts:
   chapters:
   - file: week2/dataProcess-2
   - file: week3/dataProcess-3
+- caption: Week4
+  chapters:
   - file: week3/dataProcess-4
+  - file: week3/dataProcess-5
+  - file: week3/dataProcess-6
+  - file: week3/dataProcess-7

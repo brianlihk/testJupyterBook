@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022) &#8212; Study Log</title>
+    <title>Chart.js with Jupyter book - 5 &#8212; Study Log</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,8 +54,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Learning on ipywidgets (19 Jan 2022)" href="01pywidgets.html" />
-    <link rel="prev" title="How to create a executable page in jupyter book (17 Jan 2022)" href="tutorial_make_ipynb_page.html" />
+    <link rel="next" title="Chart.js with Jupyter book - 6" href="dataProcess-7.html" />
+    <link rel="prev" title="Chart.js with Jupyter book - 4" href="dataProcess-5.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,19 +104,19 @@
   Week1
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="tutorial_make_ipynb_page.html">
+  <a class="reference internal" href="../week1/tutorial_make_ipynb_page.html">
    How to create a executable page in jupyter book (17 Jan 2022)
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/jblearning.html">
    Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="01pywidgets.html">
+  <a class="reference internal" href="../week1/01pywidgets.html">
    Learning on ipywidgets (19 Jan 2022)
   </a>
  </li>
@@ -145,7 +145,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week3/dataProcess-3.html">
+  <a class="reference internal" href="dataProcess-3.html">
    Chart.js with Jupyter book - 2
   </a>
  </li>
@@ -155,24 +155,24 @@
   Week4
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week3/dataProcess-4.html">
+  <a class="reference internal" href="dataProcess-4.html">
    Chart.js with Jupyter book - 3
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week3/dataProcess-5.html">
+  <a class="reference internal" href="dataProcess-5.html">
    Chart.js with Jupyter book - 4
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week3/dataProcess-6.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Chart.js with Jupyter book - 5
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week3/dataProcess-7.html">
+  <a class="reference internal" href="dataProcess-7.html">
    Chart.js with Jupyter book - 6
   </a>
  </li>
@@ -215,9 +215,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/week3/dataProcess-6.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week1/jblearning.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week3/dataProcess-6.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -250,6 +253,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/brianlihk/testJupyterBook/master?urlpath=tree/docs/week3/dataProcess-6.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -261,23 +281,8 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#file-type-in-jupyter-notebook">
-   File type in jupyter notebook
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#process-from-source-file-to-rendered-file">
-   Process from source file to rendered file
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-content-for-a-better-reading-experience-in-jupyter-book">
-   additional content for a better reading experience in jupyter book
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#thing-that-i-noticed">
-   Thing that I noticed
+  <a class="reference internal nav-link" href="#testing-on-dynamic-data">
+   Testing on dynamic data
   </a>
  </li>
 </ul>
@@ -290,7 +295,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)</h1>
+                <h1>Chart.js with Jupyter book - 5</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -301,23 +306,8 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#file-type-in-jupyter-notebook">
-   File type in jupyter notebook
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#process-from-source-file-to-rendered-file">
-   Process from source file to rendered file
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-content-for-a-better-reading-experience-in-jupyter-book">
-   additional content for a better reading experience in jupyter book
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#thing-that-i-noticed">
-   Thing that I noticed
+  <a class="reference internal nav-link" href="#testing-on-dynamic-data">
+   Testing on dynamic data
   </a>
  </li>
 </ul>
@@ -329,61 +319,91 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="day-1-learning-about-jupytercon-tutorial-2020-18-jan-2022">
-<h1>Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)<a class="headerlink" href="#day-1-learning-about-jupytercon-tutorial-2020-18-jan-2022" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="file-type-in-jupyter-notebook">
-<h2>File type in jupyter notebook<a class="headerlink" href="#file-type-in-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
-<p>There are many filetypes in jupyter book, we can use it to develop file to compile a page to see. Which includes:</p>
-<ol class="simple">
-<li><p>.md : Markdown file</p></li>
-<li><p>.ipynb : jupyter notebook file</p></li>
-</ol>
+  <div class="tex2jax_ignore mathjax_ignore section" id="chart-js-with-jupyter-book-5">
+<h1>Chart.js with Jupyter book - 5<a class="headerlink" href="#chart-js-with-jupyter-book-5" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="testing-on-dynamic-data">
+<h2>Testing on dynamic data<a class="headerlink" href="#testing-on-dynamic-data" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;addableChart&quot;</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="n">const</span> <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span>
+  <span class="p">];</span>
+
+  <span class="n">const</span> <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">labels</span><span class="p">:</span> <span class="n">labels</span><span class="p">,</span>
+    <span class="n">datasets</span><span class="p">:</span> <span class="p">[{</span>
+      <span class="n">label</span><span class="p">:</span> <span class="s1">&#39;Test dataset&#39;</span><span class="p">,</span>
+      <span class="n">backgroundColor</span><span class="p">:</span> <span class="s1">&#39;rgb(255, 99, 132)&#39;</span><span class="p">,</span>
+      <span class="n">borderColor</span><span class="p">:</span> <span class="s1">&#39;rgb(255, 99, 132)&#39;</span><span class="p">,</span>
+      <span class="n">data</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">],</span>
+    <span class="p">}]</span>
+  <span class="p">};</span>
+
+  <span class="n">const</span> <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;line&#39;</span><span class="p">,</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span>
+    <span class="n">options</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">};</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="n">const</span> <span class="n">myChart</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Chart</span><span class="p">(</span>
+    <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">&#39;addableChart&#39;</span><span class="p">),</span>
+    <span class="n">config</span>
+  <span class="p">);</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="n">function</span> <span class="n">addDigit</span><span class="p">(){</span>
+  <span class="n">myChart</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">labels</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">myChart</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">labels</span><span class="o">.</span><span class="n">length</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">myChart</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">myChart</span><span class="o">.</span><span class="n">update</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">button</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;btn&#39;</span> <span class="n">onClick</span><span class="o">=</span><span class="s1">&#39;addDigit()&#39;</span><span class="o">&gt;</span><span class="n">Add</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+
+</pre></div>
 </div>
-<hr class="docutils" />
-<div class="section" id="process-from-source-file-to-rendered-file">
-<h2>Process from source file to rendered file<a class="headerlink" href="#process-from-source-file-to-rendered-file" title="Permalink to this headline">¶</a></h2>
-<p>We cannot read the file directly from the .md file, so we will need to render it into human-readable pages in order to make it readable.</p>
-<p>The source file(.md, .ipynb, .myst) will converted in to jupyter notebook for the machine to execute and cacheing those output in code-cell for the purpose of show to audiance. Then it will render into different files such as .pdf, .html, and so on.</p>
+<div>
+  <canvas id="addableChart"></canvas>
 </div>
-<hr class="docutils" />
-<div class="section" id="additional-content-for-a-better-reading-experience-in-jupyter-book">
-<h2>additional content for a better reading experience in jupyter book<a class="headerlink" href="#additional-content-for-a-better-reading-experience-in-jupyter-book" title="Permalink to this headline">¶</a></h2>
-<p>there are a lot of extra style in jupyter book in different looking for senmantic content block</p>
-<ol>
-<li><p>Admonition block</p>
-<div class="admonition-this-is-a-admonition-block admonition">
-<p class="admonition-title">This is a admonition block</p>
-<p>We can put text inside here to make admonition</p>
-</div>
-<p>We can also add style into admonition block such as tips.</p>
-</li>
-<li><p>Admonition block with tip class</p>
-<div class="tip admonition">
-<p class="admonition-title">This is a admonition tip block</p>
-<p>We can put text inside here to make admonition</p>
-</div>
-</li>
-<li><p>Figures and captions
-We can add figures into the page to enhance your point:</p>
-<div class="figure align-default" id="id1">
-<img alt="../_images/rick.jpg" src="../_images/rick.jpg" />
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">This is a picture to rick roll you</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-</li>
-<li><p>Drop down block
-We can add a class called ‘dropdown’ to hide the block</p>
-<div class="dropdown admonition">
-<p class="admonition-title">Rick Roll</p>
-<p>Never gonna let you down</p>
-</div>
-</li>
-</ol>
-</div>
-<hr class="docutils" />
-<div class="section" id="thing-that-i-noticed">
-<h2>Thing that I noticed<a class="headerlink" href="#thing-that-i-noticed" title="Permalink to this headline">¶</a></h2>
-<p>I found that you have to remove the whole _build file to make your page update completly, or it will remain some old data or cache inside the page and cause the navigation bugged.</p>
-<p>Also, the compiler will automatically update the figure number for you to save you some time from re-entering the figure number whenn you inserted or deleted some figure.</p>
+<script>
+  const labels = [
+    1,2,3,4,5,6,7
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Test dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+</script>
+<script>
+  const myChart = new Chart(
+    document.getElementById('addableChart'),
+    config
+  );
+</script>
+<script>
+function addDigit(){
+  myChart.data.labels.push(myChart.data.labels.length+1);
+  myChart.data.datasets[0].data.push(0);
+  myChart.update();
+}
+</script>
+<p><button id='btn' onClick='addDigit()'>Add</button></p>
 </div>
 </div>
 
@@ -400,7 +420,7 @@ We can add a class called ‘dropdown’ to hide the block</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week1"
+            path: "./week3"
         },
         predefinedOutput: true
     }
@@ -412,17 +432,17 @@ We can add a class called ‘dropdown’ to hide the block</p>
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="tutorial_make_ipynb_page.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="dataProcess-5.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">How to create a executable page in jupyter book (17 Jan 2022)</p>
+            <p class="prev-next-title">Chart.js with Jupyter book - 4</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="01pywidgets.html" title="next page">
+    <a class='right-next' id="next-link" href="dataProcess-7.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Learning on ipywidgets (19 Jan 2022)</p>
+        <p class="prev-next-title">Chart.js with Jupyter book - 6</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
