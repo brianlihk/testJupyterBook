@@ -272,8 +272,8 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#packages-or-application-installed-in-remote-server">
-   Packages or application installed in remote server
+  <a class="reference internal nav-link" href="#what-i-have-done-to-develop-a-jupyter-lite-website">
+   What I have done to develop a Jupyter Lite website
   </a>
  </li>
 </ul>
@@ -297,8 +297,8 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#packages-or-application-installed-in-remote-server">
-   Packages or application installed in remote server
+  <a class="reference internal nav-link" href="#what-i-have-done-to-develop-a-jupyter-lite-website">
+   What I have done to develop a Jupyter Lite website
   </a>
  </li>
 </ul>
@@ -312,9 +312,18 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="notes-jotted-while-building-jupyterlite-webpage">
 <h1>Notes jotted while building JupyterLite webpage<a class="headerlink" href="#notes-jotted-while-building-jupyterlite-webpage" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="packages-or-application-installed-in-remote-server">
-<h2>Packages or application installed in remote server<a class="headerlink" href="#packages-or-application-installed-in-remote-server" title="Permalink to this headline">¶</a></h2>
-<p>I installed Raspbian OS in a raspberry pi hosted in my home, redirected all incoming traffic from port 22 and 80 of my home router to the raspberry pi server to process.</p>
+<div class="section" id="what-i-have-done-to-develop-a-jupyter-lite-website">
+<h2>What I have done to develop a Jupyter Lite website<a class="headerlink" href="#what-i-have-done-to-develop-a-jupyter-lite-website" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>I installed Raspbian OS in a raspberry pi hosted in my home, redirected all incoming traffic from port 22 and 80 of my home router to the raspberry pi server to process.</p></li>
+<li><p>I installed jupyter lab into raspberry pi as it is a essential component to build jupyter lite.</p></li>
+<li><p>I installed jupyter lite which is extension of jupyter lab.</p></li>
+<li><p>i use <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lite</span> <span class="pre">init</span></code> to build essential files to build given by jupyter lite.</p></li>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">build</span></code> to build the jupyter lite web from current directory to _output folder.</p></li>
+<li><p>We can now serve the output file to the internet, and after I played with it, i can say it in 90% like python we used to use in our computer.</p></li>
+<li><p>I installed apache2 and put all output files from jupyter lite to <code class="docutils literal notranslate"><span class="pre">/var/www/html/</span></code> so the content server can deliver Jupyter lite to our user.</p></li>
+<li><p>I registered a subdomain under <a class="reference external" href="http://duckdns.org">duckdns.org</a> for free, so i make use of it and make a script to update my ip for that subdomain from my raspberry pi automatically each 5 minutes. So I assume user can enter Jupyter Lite with a proper domain than a ipv4 address.</p></li>
+</ol>
 </div>
 </div>
 
