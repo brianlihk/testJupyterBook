@@ -9,3 +9,9 @@
 6. We can now serve the output file to the internet, and after I played with it, i can say it in 90% like python we used to use in our computer.
 7. I installed apache2 and put all output files from jupyter lite to ```/var/www/html/``` so the content server can deliver Jupyter lite to our user.
 8. I registered a subdomain under duckdns.org for free, so i make use of it and make a script to update my ip for that subdomain from my raspberry pi automatically each 5 minutes. So I assume user can enter Jupyter Lite with a proper domain than a ipv4 address.
+
+## What i had found while i testing out Jupyter Lite
+1. extra pyWheel file (aka python package) in Jupyter lab could be installed by executing ```!pip install [package name]``` usually, but in Jupyter Lite, this method does not work. We need to use a package called micropip in pyodide to install extra packages.
+```{figure} /week5/micropip.png
+:name: micropip testing
+```
