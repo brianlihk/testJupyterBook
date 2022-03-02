@@ -276,6 +276,11 @@
    What I have done to develop a Jupyter Lite website
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-i-had-found-while-i-testing-out-jupyter-lite">
+   What i had found while i testing out Jupyter Lite
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -301,6 +306,11 @@
    What I have done to develop a Jupyter Lite website
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-i-had-found-while-i-testing-out-jupyter-lite">
+   What i had found while i testing out Jupyter Lite
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -324,6 +334,15 @@
 <li><p>I installed apache2 and put all output files from jupyter lite to <code class="docutils literal notranslate"><span class="pre">/var/www/html/</span></code> so the content server can deliver Jupyter lite to our user.</p></li>
 <li><p>I registered a subdomain under <a class="reference external" href="http://duckdns.org">duckdns.org</a> for free, so i make use of it and make a script to update my ip for that subdomain from my raspberry pi automatically each 5 minutes. So I assume user can enter Jupyter Lite with a proper domain than a ipv4 address.</p></li>
 </ol>
+</div>
+<div class="section" id="what-i-had-found-while-i-testing-out-jupyter-lite">
+<h2>What i had found while i testing out Jupyter Lite<a class="headerlink" href="#what-i-had-found-while-i-testing-out-jupyter-lite" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>extra pyWheel file (aka python package) in Jupyter lab could be installed by executing <code class="docutils literal notranslate"><span class="pre">!pip</span> <span class="pre">install</span> <span class="pre">[package</span> <span class="pre">name]</span></code> usually, but in Jupyter Lite, this method does not work. We need to use a package called micropip in pyodide to install extra packages.</p></li>
+</ol>
+<div class="figure align-default" id="micropip-testing">
+<img alt="../_images/micropip.png" src="../_images/micropip.png" />
+</div>
 </div>
 </div>
 
