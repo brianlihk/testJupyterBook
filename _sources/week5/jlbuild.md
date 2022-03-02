@@ -11,7 +11,8 @@
 8. I registered a subdomain under duckdns.org for free, so i make use of it and make a script to update my ip for that subdomain from my raspberry pi automatically each 5 minutes. So I assume user can enter Jupyter Lite with a proper domain than a ipv4 address.
 
 ## What i had found while i testing out Jupyter Lite
-1. extra pyWheel file (aka python package) in Jupyter lab could be installed by executing ```!pip install [package name]``` usually, but in Jupyter Lite, this method does not work. We need to use a package called micropip in pyodide to install extra packages.
+1. Extra pyWheel file (aka python package) in Jupyter lab could be installed by executing ```!pip install [package name]``` usually, but in Jupyter Lite, this method does not work. We need to use a package called micropip in pyodide to install extra packages.
 ```{figure} /week5/micropip.png
 :name: micropip testing
 ```
+2. Regular approach to retrive external data from website is not working, we need to use other method to download data from the internet, i will drill into that next week.
