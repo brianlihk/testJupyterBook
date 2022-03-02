@@ -18,7 +18,10 @@ parts:
   - file: week3/dataProcess-3
 - caption: Week4
   chapters:
-  - file: week3/dataProcess-4
-  - file: week3/dataProcess-5
-  - file: week3/dataProcess-6
-  - file: week3/dataProcess-7
+  - file: week4/dataProcess-4
+  - file: week4/dataProcess-5
+  - file: week4/dataProcess-6
+  - file: week4/dataProcess-7
+- caption: Week5
+  chapters:
+  - file: week5/jlbuild
