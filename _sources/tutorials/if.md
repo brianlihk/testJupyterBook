@@ -1,13 +1,13 @@
 # if-loop
 <script type="text/x-thebe-config"> 
-  {
-      requestKernel: true,
-      mountActivateWidget: true,
-      mountStatusWidget: true,
-      binderOptions: {
-      repo: "brianlihk/requirements",
-      },
-  }
+{
+	requestKernel: true,
+    mountActivateWidget: true,
+    mountStatusWidget: true,
+    binderOptions: {
+		repo: "brianlihk/requirements",
+    }
+}
 </script>
 
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
