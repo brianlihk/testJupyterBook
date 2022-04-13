@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chart.js with Jupyter book - 3 &#8212; Study Log</title>
+    <title>Tesing on Thebe with own repository in github &#8212; Study Log</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,8 +54,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Chart.js with Jupyter book - 4" href="dataProcess-5.html" />
-    <link rel="prev" title="Chart.js with Jupyter book - 2" href="../week3/dataProcess-3.html" />
+    <link rel="next" title="Download required library into our kernel" href="downloadLib.html" />
+    <link rel="prev" title="Testing on Thebe in jupyterbook" href="testOfThebe.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -155,24 +155,24 @@
   Week4
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/dataProcess-4.html">
    Chart.js with Jupyter book - 3
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="dataProcess-5.html">
+  <a class="reference internal" href="../week4/dataProcess-5.html">
    Chart.js with Jupyter book - 4
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="dataProcess-6.html">
+  <a class="reference internal" href="../week4/dataProcess-6.html">
    Chart.js with Jupyter book - 5
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="dataProcess-7.html">
+  <a class="reference internal" href="../week4/dataProcess-7.html">
    Chart.js with Jupyter book - 6
   </a>
  </li>
@@ -194,19 +194,19 @@
   Week14
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week14/testOfThebe.html">
+  <a class="reference internal" href="testOfThebe.html">
    Testing on Thebe in jupyterbook
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week14/ownRepo.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Tesing on Thebe with own repository in github
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week14/downloadLib.html">
+  <a class="reference internal" href="downloadLib.html">
    Download required library into our kernel
   </a>
  </li>
@@ -296,12 +296,9 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/week4/dataProcess-4.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week4/dataProcess-4.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week14/ownRepo.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -334,23 +331,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/brianlihk/testJupyterBook/master?urlpath=tree/docs/week4/dataProcess-4.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -362,13 +342,50 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-chart-js-libaray">
-   Importing chart.js libaray
+  <a class="reference internal nav-link" href="#before-we-start">
+   Before we start
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-sample-from-chart-js-official-site">
-   A sample from Chart.js official site
+  <a class="reference internal nav-link" href="#thebe-initaliaztion-and-configureation">
+   Thebe initaliaztion and configureation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-activate-and-run-buttons">
+   Creating activate and run buttons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-executable-cell">
+   Creating executable cell
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-exmaples">
+   Other exmaples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calcalation-test">
+     Calcalation test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#input-test">
+     Input test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-test">
+     Import test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#details">
+   Details
   </a>
  </li>
 </ul>
@@ -381,7 +398,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Chart.js with Jupyter book - 3</h1>
+                <h1>Tesing on Thebe with own repository in github</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -392,13 +409,50 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-chart-js-libaray">
-   Importing chart.js libaray
+  <a class="reference internal nav-link" href="#before-we-start">
+   Before we start
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-sample-from-chart-js-official-site">
-   A sample from Chart.js official site
+  <a class="reference internal nav-link" href="#thebe-initaliaztion-and-configureation">
+   Thebe initaliaztion and configureation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-activate-and-run-buttons">
+   Creating activate and run buttons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-executable-cell">
+   Creating executable cell
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-exmaples">
+   Other exmaples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calcalation-test">
+     Calcalation test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#input-test">
+     Input test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-test">
+     Import test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#details">
+   Details
   </a>
  </li>
 </ul>
@@ -410,89 +464,135 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="chart-js-with-jupyter-book-3">
-<h1>Chart.js with Jupyter book - 3<a class="headerlink" href="#chart-js-with-jupyter-book-3" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="importing-chart-js-libaray">
-<h2>Importing chart.js libaray<a class="headerlink" href="#importing-chart-js-libaray" title="Permalink to this headline">¶</a></h2>
-<p>I had imported the js libaray into _static file in root folder, it will be imported to every page in the website.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tesing-on-thebe-with-own-repository-in-github">
+<h1>Tesing on Thebe with own repository in github<a class="headerlink" href="#tesing-on-thebe-with-own-repository-in-github" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="before-we-start">
+<h2>Before we start<a class="headerlink" href="#before-we-start" title="Permalink to this headline">¶</a></h2>
+<p>As i mentioned in the last attemp, i forked a same copy of the repo we are using in last page. I will reconfig the thebe and make some try fly with it.</p>
 </div>
-<div class="section" id="a-sample-from-chart-js-official-site">
-<h2>A sample from Chart.js official site<a class="headerlink" href="#a-sample-from-chart-js-official-site" title="Permalink to this headline">¶</a></h2>
-<p>To test if the libarary is imported or not, we can try sample script from official site and see if any chart pops up.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;myChart&quot;</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">const</span> <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;January&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;February&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;March&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;April&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;May&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;June&#39;</span><span class="p">,</span>
-  <span class="p">];</span>
-
-  <span class="n">const</span> <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="n">labels</span><span class="p">:</span> <span class="n">labels</span><span class="p">,</span>
-    <span class="n">datasets</span><span class="p">:</span> <span class="p">[{</span>
-      <span class="n">label</span><span class="p">:</span> <span class="s1">&#39;My First dataset&#39;</span><span class="p">,</span>
-      <span class="n">backgroundColor</span><span class="p">:</span> <span class="s1">&#39;rgb(255, 99, 132)&#39;</span><span class="p">,</span>
-      <span class="n">borderColor</span><span class="p">:</span> <span class="s1">&#39;rgb(255, 99, 132)&#39;</span><span class="p">,</span>
-      <span class="n">data</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">],</span>
-    <span class="p">}]</span>
-  <span class="p">};</span>
-
-  <span class="n">const</span> <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;line&#39;</span><span class="p">,</span>
-    <span class="n">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span>
-    <span class="n">options</span><span class="p">:</span> <span class="p">{}</span>
-  <span class="p">};</span>
+<div class="section" id="thebe-initaliaztion-and-configureation">
+<h2>Thebe initaliaztion and configureation<a class="headerlink" href="#thebe-initaliaztion-and-configureation" title="Permalink to this headline">¶</a></h2>
+<script type="text/x-thebe-config"> 
+  {
+      requestKernel: true,
+      mountActivateWidget: true,
+      mountStatusWidget: true,
+      binderOptions: {
+      repo: "brianlihk/requirements",
+      },
+  }
+</script>
+<script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text/x-thebe-config&quot;</span><span class="o">&gt;</span>
+  <span class="p">{</span>
+      <span class="n">requestKernel</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="n">mountActivateWidget</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="n">mountStatusWidget</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="n">binderOptions</span><span class="p">:</span> <span class="p">{</span>
+      <span class="n">repo</span><span class="p">:</span> <span class="s2">&quot;brianlihk/requirements&quot;</span><span class="p">,</span>
+      <span class="p">},</span>
+  <span class="p">}</span>
 <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">const</span> <span class="n">myChart</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Chart</span><span class="p">(</span>
-    <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">&#39;myChart&#39;</span><span class="p">),</span>
-    <span class="n">config</span>
-  <span class="p">);</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://unpkg.com/thebe@latest/lib/index.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div>
-  <canvas id="myChart"></canvas>
 </div>
-<script>
-  const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-  ];
+<div class="section" id="creating-activate-and-run-buttons">
+<h2>Creating activate and run buttons<a class="headerlink" href="#creating-activate-and-run-buttons" title="Permalink to this headline">¶</a></h2>
+<div class="thebe-activate"></div>
+<div class="thebe-status"></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;thebe-activate&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;thebe-status&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-executable-cell">
+<h2>Creating executable cell<a class="headerlink" href="#creating-executable-cell" title="Permalink to this headline">¶</a></h2>
+<pre data-executable="true" data-language="python">print("Hello!")</pre>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span><span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="other-exmaples">
+<h2>Other exmaples<a class="headerlink" href="#other-exmaples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="calcalation-test">
+<h3>Calcalation test<a class="headerlink" href="#calcalation-test" title="Permalink to this headline">¶</a></h3>
+<pre data-executable="true" data-language="python">
+import math
+# Assign values to x and n
+x = 4
+n = 3
 
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45],
-    }]
-  };
+# Method 1
+power = x ** n
+print("%d to the power %d is %d" % (x,n,power))
 
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-</script>
-<script>
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-</script></div>
+# Method 2
+power = pow(x,n)
+print("%d to the power %d is %d" % (x,n,power))
+
+# Method 3
+power = math.pow(2,6.5)
+print("%d to the power %d is %5.2f" % (x,n,power))
+</pre>
+<p>Success</p>
+</div>
+<div class="section" id="input-test">
+<h3>Input test<a class="headerlink" href="#input-test" title="Permalink to this headline">¶</a></h3>
+<pre data-executable="true" data-language="python">
+# Define the number set
+numbers = {23, 90, 56, 78, 12, 34, 67}
+ 
+# Add a new data
+numbers.add(50)
+# Print the set values
+print(numbers)
+
+message = "Number is not found"
+
+# Take a number value for search
+search_number = int(input("Enter a number:"))
+# Search the number in the set
+for val in numbers:
+    if val == search_number:
+        message = "Number is found"
+        break
+
+print(message)
+</pre>
+<p>Success</p>
+</div>
+<div class="section" id="import-test">
+<h3>Import test<a class="headerlink" href="#import-test" title="Permalink to this headline">¶</a></h3>
+<pre data-executable="true" data-language="python">
+# Import another python script
+import vacation as v
+
+# Initialize the month list
+months = ["January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"]
+# Initial flag variable to print summer vacation one time
+flag = 0
+
+# Iterate the list using for loop
+for month in months:
+    if month == "June" or month == "July":
+        if flag == 0:
+            print("Now",v.vacation1)
+            flag = 1
+    elif month == "December":
+            print("Now",v.vacation2)
+    else:
+        print("The current month is",month)
+</pre>
+<p>Failed, there is no lib installed.</p>
+</div>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<p>The script failed when it is importing a non-existing library, I will find a way t ofix it as i can foresee there will be tons of packages to be installed for wide range of usage.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -508,7 +608,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week4"
+            path: "./week14"
         },
         predefinedOutput: true
     }
@@ -520,17 +620,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../week3/dataProcess-3.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="testOfThebe.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Chart.js with Jupyter book - 2</p>
+            <p class="prev-next-title">Testing on Thebe in jupyterbook</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="dataProcess-5.html" title="next page">
+    <a class='right-next' id="next-link" href="downloadLib.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chart.js with Jupyter book - 4</p>
+        <p class="prev-next-title">Download required library into our kernel</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
