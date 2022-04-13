@@ -5,7 +5,7 @@
       mountActivateWidget: true,
       mountStatusWidget: true,
       binderOptions: {
-      repo: "binder-examples/requirements",
+      repo: "brianlihk/requirements",
       },
   }
 </script>
@@ -36,4 +36,13 @@ ageIfHeIsStillAlive = 206
 name = "Don Bosco"
 
 print(name, age, ageIfHeIsStillAlive)
+</pre>
+
+## A short quiz for you
+1. Please define variables that contain your name and phone number
+2. print out those variables
+
+<pre data-executable="true" data-language="python">
+# Please do the quiz here
+
 </pre>

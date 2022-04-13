@@ -1,11 +1,11 @@
-# Operators (to be finished)
+# Operators (WIP)
 <script type="text/x-thebe-config"> 
   {
       requestKernel: true,
       mountActivateWidget: true,
       mountStatusWidget: true,
       binderOptions: {
-      repo: "binder-examples/requirements",
+      repo: "brianlihk/requirements",
       },
   }
 </script>
@@ -17,3 +17,4 @@
 
 ---
 ## Introduction
+

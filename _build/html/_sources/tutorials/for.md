@@ -5,7 +5,7 @@
       mountActivateWidget: true,
       mountStatusWidget: true,
       binderOptions: {
-      repo: "binder-examples/requirements",
+      repo: "brianlihk/requirements",
       },
   }
 </script>
