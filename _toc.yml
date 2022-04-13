@@ -25,3 +25,19 @@ parts:
 - caption: Week5
   chapters:
   - file: week5/jlbuild
+- caption: Week14
+  chapters:
+  - file: week14/testOfThebe
+  - file: week14/ownRepo
+  - file: week14/downloadLib
+- caption: Tutorials
+  chapters:
+  - file: tutorials/welcome
+  - file: tutorials/python101
+  - file: tutorials/variables
+  - file: tutorials/valueType
+  - file: tutorials/operators
+  - file: tutorials/if
+  - file: tutorials/while
+  - file: tutorials/for
+
