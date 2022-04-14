@@ -29,7 +29,7 @@ There are two types of operator, one for calcalating called Aritgmetic operator,
 | + | add | a + b | 加算 |
 | - | subtract | a - b | 減算 |
 | * | multiply | a * b | 乗算 |
-| / | devide | a / b ｜ 除算 |
+| / | devide | a / b | 除算 |
 | % | modulus. This will return the leftover value when b devided by a | a % b | 余り |
 ### Comparison
 | operator | explain | example |
