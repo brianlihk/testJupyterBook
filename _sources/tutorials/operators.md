@@ -24,13 +24,13 @@ For example 1 is greater than 0, we can express it as 1>0, python will return us
 There are two types of operator, one for calcalating called Aritgmetic operator, the other one called comparison were for comparing left and right side to return if it is a true or false statement.
 
 ### Arithmetic
-| operator | explain | example |
-| :------: | :------ | :------ |
-| + | add | a + b |
-| - | subtract | a - b |
-| * | multiply | a * b |
-| / | devide | a / b |
-| % | modulus. This will return the leftover value when b devided by a | a % b |
+| operator | explain | example | japanese |
+| :------: | :------ | :------ | :------: |
+| + | add | a + b | 加算 |
+| - | subtract | a - b | 減算 |
+| * | multiply | a * b | 乗算 |
+| / | devide | a / b ｜ 除算 |
+| % | modulus. This will return the leftover value when b devided by a | a % b | 余り |
 ### Comparison
 | operator | explain | example |
 | :------: | :------ | :------ |
@@ -39,6 +39,8 @@ There are two types of operator, one for calcalating called Aritgmetic operator,
 | < | less than | a < b |
 | <= | less or equal to | a <= b |
 | == | equal to | a == b |
-| != | not equal to | a == b |
+| != | not equal to | a != b |
 | ! | not | !a == !b |
+
+
 
