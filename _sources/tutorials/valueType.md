@@ -25,6 +25,7 @@ Data type is in of the most important thing among all programming language, each
 | String  | "This is a string" | str(x) |
 | Integer | 5234          | int(x)|
 | Float   | 293.1234      | float(x)|
+| Boolean | True / False  | N/A |
 
 And there are more advenced data type to be introduced in advence class!
 
