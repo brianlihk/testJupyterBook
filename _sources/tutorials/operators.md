@@ -21,7 +21,7 @@ Operator could help computer to decide if A and B value is true or false in oper
 For example 1 is greater than 0, we can express it as 1>0, python will return us a true value. But if we try 0>1, the result will be false as it is a false statement.
 
 ## Operator form
-There are two types of operator, one for calcalating called Aritgmetic operator, the other one called comparison were for comparing left and right side to return if it is a true or false statement.
+There are three types of operator, one for calcalating called Aritgmetic operator. Another one called comparison were for comparing left and right side to return if it is a true or false statement.
 
 ### Arithmetic
 | operator | explain | example | japanese |
@@ -42,5 +42,5 @@ There are two types of operator, one for calcalating called Aritgmetic operator,
 | != | not equal to | a != b |
 | ! | not | !a == !b |
 
-
+### Logical
 
