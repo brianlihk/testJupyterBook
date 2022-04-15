@@ -72,6 +72,7 @@ ____:
 </pre>
 ## Advance quiz
 if user input string instead of number, the program will crash, try to avoid that.
+
 hint: try to learn this from external site: https://www.w3schools.com/python/python_try_except.asp
 <pre data-executable="true" data-language="python">
 age = int(input("Tell me your age please"))
