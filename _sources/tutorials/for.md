@@ -1,4 +1,4 @@
-# for loop (to be finished)
+# for loop
 <script type="text/x-thebe-config"> 
   {
       requestKernel: true,
