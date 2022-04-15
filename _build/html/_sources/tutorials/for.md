@@ -18,7 +18,9 @@
 ---
 ## Introduction
 
+## Creative idea time
+Below is a playground for you to use, feel free to mess around
 <pre data-executable="true" data-language="python">
-# Please do the quiz here
+age = int(input("Tell me your age please"))
 
 </pre>
