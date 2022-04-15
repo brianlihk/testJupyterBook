@@ -1,4 +1,4 @@
-# Operators (WIP)
+# Operators
 <script type="text/x-thebe-config"> 
   {
       requestKernel: true,
