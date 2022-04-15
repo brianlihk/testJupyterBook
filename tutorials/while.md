@@ -1,4 +1,4 @@
-# while-loop (to be finished)
+# while-loop
 <script type="text/x-thebe-config"> 
   {
       requestKernel: true,
