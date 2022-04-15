@@ -98,3 +98,10 @@ c = ____
 
 print(((a and b) and not c) or a)
 </pre>
+
+
+## Creative idea time
+Below is a playground for you to use, feel free to mess around
+<pre data-executable="true" data-language="python">
+
+</pre>

@@ -17,8 +17,19 @@
 
 ---
 ## Introduction
+While loop is alike if loop, the different is it will loop what inside the loop until the condition become false.
 
+## Example
+There is a variable called counter with default value of 0, it will increase 1 after it had been print out. Guess when will it stops.
 <pre data-executable="true" data-language="python">
-# Please do the quiz here
+counter = 0
+while(counter < 10):
+	print(counter)
+	counter = counter + 1
+</pre>
+
+## Creative idea time
+Below is a playground for you to use, feel free to mess around
+<pre data-executable="true" data-language="python">
 
 </pre>
