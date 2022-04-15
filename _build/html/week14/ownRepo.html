@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesing on Thebe with own repository in github &#8212; Study Log</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/chart.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Download required library into our kernel" href="downloadLib.html" />
+    <link rel="prev" title="Testing on Thebe in jupyterbook" href="testOfThebe.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Study Log</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../goal.html">
+   My Introduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/tutorial_make_ipynb_page.html">
+   How to create a executable page in jupyter book (17 Jan 2022)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/jblearning.html">
+   Day 1 learning about JupyterCon Tutorial 2020 (18 Jan 2022)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/01pywidgets.html">
+   Learning on ipywidgets (19 Jan 2022)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week2
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/dataProcess.html">
+   Data process and visualize using jupyter book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/dataProcess-2.html">
+   Chart.js with Jupyter book - 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/dataProcess-3.html">
+   Chart.js with Jupyter book - 2
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week4
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/dataProcess-4.html">
+   Chart.js with Jupyter book - 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/dataProcess-5.html">
+   Chart.js with Jupyter book - 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/dataProcess-6.html">
+   Chart.js with Jupyter book - 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/dataProcess-7.html">
+   Chart.js with Jupyter book - 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week5
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/jlbuild.html">
+   Notes jotted while building JupyterLite webpage
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week14
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="testOfThebe.html">
+   Testing on Thebe in jupyterbook
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tesing on Thebe with own repository in github
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="downloadLib.html">
+   Download required library into our kernel
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/welcome.html">
+   Hello There
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/python101.html">
+   How to use python in this website
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/variables.html">
+   Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/valueType.html">
+   Basic data type
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/operators.html">
+   Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/if.html">
+   if-loop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/while.html">
+   while-loop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/for.html">
+   for loop
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week14/ownRepo.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/brianlihk/testJupyterBook"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#before-we-start">
+   Before we start
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#thebe-initaliaztion-and-configureation">
+   Thebe initaliaztion and configureation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-activate-and-run-buttons">
+   Creating activate and run buttons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-executable-cell">
+   Creating executable cell
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-exmaples">
+   Other exmaples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calcalation-test">
+     Calcalation test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#input-test">
+     Input test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-test">
+     Import test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#details">
+   Details
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tesing on Thebe with own repository in github</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#before-we-start">
+   Before we start
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#thebe-initaliaztion-and-configureation">
+   Thebe initaliaztion and configureation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-activate-and-run-buttons">
+   Creating activate and run buttons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-executable-cell">
+   Creating executable cell
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-exmaples">
+   Other exmaples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calcalation-test">
+     Calcalation test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#input-test">
+     Input test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-test">
+     Import test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#details">
+   Details
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tesing-on-thebe-with-own-repository-in-github">
+<h1>Tesing on Thebe with own repository in github<a class="headerlink" href="#tesing-on-thebe-with-own-repository-in-github" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="before-we-start">
+<h2>Before we start<a class="headerlink" href="#before-we-start" title="Permalink to this headline">¶</a></h2>
+<p>As i mentioned in the last attemp, i forked a same copy of the repo we are using in last page. I will reconfig the thebe and make some try fly with it.</p>
+</div>
+<div class="section" id="thebe-initaliaztion-and-configureation">
+<h2>Thebe initaliaztion and configureation<a class="headerlink" href="#thebe-initaliaztion-and-configureation" title="Permalink to this headline">¶</a></h2>
+<script type="text/x-thebe-config"> 
+  {
+      requestKernel: true,
+      mountActivateWidget: true,
+      mountStatusWidget: true,
+      binderOptions: {
+      repo: "brianlihk/requirements",
+      },
+  }
+</script>
+<script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text/x-thebe-config&quot;</span><span class="o">&gt;</span>
+  <span class="p">{</span>
+      <span class="n">requestKernel</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="n">mountActivateWidget</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="n">mountStatusWidget</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="n">binderOptions</span><span class="p">:</span> <span class="p">{</span>
+      <span class="n">repo</span><span class="p">:</span> <span class="s2">&quot;brianlihk/requirements&quot;</span><span class="p">,</span>
+      <span class="p">},</span>
+  <span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://unpkg.com/thebe@latest/lib/index.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-activate-and-run-buttons">
+<h2>Creating activate and run buttons<a class="headerlink" href="#creating-activate-and-run-buttons" title="Permalink to this headline">¶</a></h2>
+<div class="thebe-activate"></div>
+<div class="thebe-status"></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;thebe-activate&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;thebe-status&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-executable-cell">
+<h2>Creating executable cell<a class="headerlink" href="#creating-executable-cell" title="Permalink to this headline">¶</a></h2>
+<pre data-executable="true" data-language="python">print("Hello!")</pre>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span><span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="other-exmaples">
+<h2>Other exmaples<a class="headerlink" href="#other-exmaples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="calcalation-test">
+<h3>Calcalation test<a class="headerlink" href="#calcalation-test" title="Permalink to this headline">¶</a></h3>
+<pre data-executable="true" data-language="python">
+import math
+# Assign values to x and n
+x = 4
+n = 3
+
+# Method 1
+power = x ** n
+print("%d to the power %d is %d" % (x,n,power))
+
+# Method 2
+power = pow(x,n)
+print("%d to the power %d is %d" % (x,n,power))
+
+# Method 3
+power = math.pow(2,6.5)
+print("%d to the power %d is %5.2f" % (x,n,power))
+</pre>
+<p>Success</p>
+</div>
+<div class="section" id="input-test">
+<h3>Input test<a class="headerlink" href="#input-test" title="Permalink to this headline">¶</a></h3>
+<pre data-executable="true" data-language="python">
+# Define the number set
+numbers = {23, 90, 56, 78, 12, 34, 67}
+ 
+# Add a new data
+numbers.add(50)
+# Print the set values
+print(numbers)
+
+message = "Number is not found"
+
+# Take a number value for search
+search_number = int(input("Enter a number:"))
+# Search the number in the set
+for val in numbers:
+    if val == search_number:
+        message = "Number is found"
+        break
+
+print(message)
+</pre>
+<p>Success</p>
+</div>
+<div class="section" id="import-test">
+<h3>Import test<a class="headerlink" href="#import-test" title="Permalink to this headline">¶</a></h3>
+<pre data-executable="true" data-language="python">
+# Import another python script
+import vacation as v
+
+# Initialize the month list
+months = ["January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"]
+# Initial flag variable to print summer vacation one time
+flag = 0
+
+# Iterate the list using for loop
+for month in months:
+    if month == "June" or month == "July":
+        if flag == 0:
+            print("Now",v.vacation1)
+            flag = 1
+    elif month == "December":
+            print("Now",v.vacation2)
+    else:
+        print("The current month is",month)
+</pre>
+<p>Failed, there is no lib installed.</p>
+</div>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<p>The script failed when it is importing a non-existing library, I will find a way t ofix it as i can foresee there will be tons of packages to be installed for wide range of usage.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week14"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="testOfThebe.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Testing on Thebe in jupyterbook</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="downloadLib.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Download required library into our kernel</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Brian Li with The Jupyter Book Community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
