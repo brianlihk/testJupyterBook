@@ -44,13 +44,13 @@ There are three types of operator, one for calcalating called Aritgmetic operato
 
 ### Logical
 | operator | exlain | example |
-| and | and | a and b |
-| or | or | a or b |
-| not | not | not a |
+| and | return True when both a and b are true, else return False | a and b |
+| or | return True when any of a or b is True, unless they are both False | a or b |
+| not | return the opposite state | not a |
 
 ## Example
-### Arithmetic
 
+### Arithmetic
 <pre data-executable="true" data-language="python">
 a = 10
 b = 6
@@ -61,8 +61,8 @@ print(a*b)
 print(a/d)
 print(a%b)
 </pre>
-### Comparison
 
+### Comparison
 <pre data-executable="true" data-language="python">
 a = 10
 b = 6
@@ -75,4 +75,26 @@ print(a == b)
 print(a != b)
 print(!a)
 print(a%b)
+</pre>
+
+### Logic
+<pre data-executable="true" data-language="python">
+a = True
+b = False
+
+print(a and b)
+print(a or b)
+print(a and not b)
+print(not a and b)
+</pre>
+
+## A short quiz for you
+1. replace the underline to any operator that you think are appropriate to make the output as true.
+
+<pre data-executable="true" data-language="python">
+a = ____
+b = ____
+c = ____
+
+print(((a and b) and not c) or a)
 </pre>
