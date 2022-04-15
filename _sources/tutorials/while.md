@@ -28,8 +28,18 @@ while(counter < 10):
 	counter = counter + 1
 </pre>
 
-## Creative idea time
-Below is a playground for you to use, feel free to mess around
+## A short quiz for you
+Replace underlines to make the counter start counting at 5, and stops at 16
 <pre data-executable="true" data-language="python">
+counter = ___
+while(counter < ___):
+	print(counter)
+	counter __ = counter + 1
+</pre>
 
+## Advance quiz
+Given to you a random number in variable named randint, please find out the number with while loop and operator.
+<pre data-executable="true" data-language="python">
+import random
+randint = random.randint(100)
 </pre>
