@@ -43,4 +43,36 @@ There are three types of operator, one for calcalating called Aritgmetic operato
 | ! | not | !a == !b |
 
 ### Logical
+| operator | exlain | example |
+| and | and | a and b |
+| or | or | a or b |
+| not | not | not a |
 
+## Example
+### Arithmetic
+
+<pre data-executable="true" data-language="python">
+a = 10
+b = 6
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/d)
+print(a%b)
+</pre>
+### Comparison
+
+<pre data-executable="true" data-language="python">
+a = 10
+b = 6
+
+print(a > b)
+print(a >= b)
+print(a < b)
+print(a <= b)
+print(a == b)
+print(a != b)
+print(!a)
+print(a%b)
+</pre>
