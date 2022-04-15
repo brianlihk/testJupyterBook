@@ -383,7 +383,17 @@
      Comparison
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logic">
+     Logic
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-short-quiz-for-you">
+   A short quiz for you
+  </a>
  </li>
 </ul>
 
@@ -447,7 +457,17 @@
      Comparison
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logic">
+     Logic
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-short-quiz-for-you">
+   A short quiz for you
+  </a>
  </li>
 </ul>
 
@@ -565,9 +585,9 @@ For example 1 is greater than 0, we can express it as 1&gt;0, python will return
 <div class="section" id="logical">
 <h3>Logical<a class="headerlink" href="#logical" title="Permalink to this headline">¶</a></h3>
 <p>| operator | exlain | example |
-| and | and | a and b |
-| or | or | a or b |
-| not | not | not a |</p>
+| and | return True when both a and b are true, else return False | a and b |
+| or | return True when any of a or b is True, unless they are both False | a or b |
+| not | return the opposite state | not a |</p>
 </div>
 </div>
 <div class="section" id="example">
@@ -601,6 +621,31 @@ print(!a)
 print(a%b)
 </pre>
 </div>
+<div class="section" id="logic">
+<h3>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h3>
+<pre data-executable="true" data-language="python">
+a = True
+b = False
+
+print(a and b)
+print(a or b)
+print(a and not b)
+print(not a and b)
+</pre>
+</div>
+</div>
+<div class="section" id="a-short-quiz-for-you">
+<h2>A short quiz for you<a class="headerlink" href="#a-short-quiz-for-you" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>replace the underline to any operator that you think are appropriate to make the output as true.</p></li>
+</ol>
+<pre data-executable="true" data-language="python">
+a = ____
+b = ____
+c = ____
+
+print(((a and b) and not c) or a)
+</pre>
 </div>
 </div>
 
