@@ -70,8 +70,9 @@ ____(age == 17):
 ____:
 	print("_____")
 </pre>
-## Creative idea time
-Below is a playground for you to use, feel free to mess around
+## Advance quiz
+if user input string instead of number, the program will crash, try to avoid that.
+hint: (https://www.w3schools.com/python/python_try_except.asp)[https://www.w3schools.com/python/python_try_except.asp]
 <pre data-executable="true" data-language="python">
 age = int(input("Tell me your age please"))
 
