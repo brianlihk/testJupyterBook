@@ -38,8 +38,8 @@ while(counter < ___):
 </pre>
 
 ## Advance quiz
-Given to you a random number in variable named randint, please find out the number with while loop and operator.
+Given to you a random number in variable named randint, please find out the number with while loop and operator. You are forbidded to print to randint out.
 <pre data-executable="true" data-language="python">
 import random
-randint = random.randint(100)
+randint = random.randint(0, 100)
 </pre>
